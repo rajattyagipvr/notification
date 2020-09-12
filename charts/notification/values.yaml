@@ -94,3 +94,9 @@ jxRequirements:
     annotations:
     #  kubernetes.io/ingress.class: nginx
 
+mongodb:
+  enabled: true
+mongodb-replicaset:
+  replicas: 3
+  podAnnotations:
+    sidecar.istio.io/inject: 'false'
